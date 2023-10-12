@@ -1,0 +1,107 @@
+header {
+  border-bottom: 1px solid lightgray;
+}
+
+.logo {
+  width: 250px;
+  height: 50px;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.nav-header-user {
+  display: flex;
+  gap: 3rem;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  position: relative;
+}
+
+.searchBox {
+  padding: 0.5rem;
+  border-radius: 0.33rem;
+  border: none;
+  background: lightgray;
+  width: 35%;
+}
+
+#input-container {
+  position: relative;
+  border: none;
+}
+
+#input-container > img {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+}
+
+#input-container > input {
+  padding-left: 40px;
+  border: none;
+  background: transparent;
+  width: 100%;
+}
+
+#input-container > input:focus {
+  outline: none;
+}
+
+.nav-links {
+  width: 40%;
+  margin: auto;
+  padding: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.cart-count {
+  position: absolute;
+  transform: translateX(-1.5rem);
+  right: 0;
+  background-color: rgb(71, 150, 233);
+  padding: 3px;
+  color: white;
+  border-radius: 0.3rem;
+}
+
+.shopping-cart {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-dropdown {
+  position: absolute;
+  transform: translateX(-12rem);
+  margin-top: 2rem;
+  padding: 2rem;
+  min-width: 375px;
+  border-radius: 1rem;
+  background-color: rgba(239, 238, 238, 0.9);
+}
+
+.cart-dropdown button {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+  cursor: pointer;
+  background-color: rgba(211, 185, 236, 0.5);
+}
+
+.cart-dropdown img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
