@@ -46,6 +46,11 @@
   color: white;
   text-decoration: none;
   margin: 0.5rem auto;
+  cursor: pointer;
+}
+
+.card-btn:disabled {
+  background-color: #999;
 }
 .card-btn-out {
   text-align: center;
