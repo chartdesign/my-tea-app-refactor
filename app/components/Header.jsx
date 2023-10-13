@@ -53,7 +53,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className='shopping-cart'>
+        <div className='cart'>
           <div className='cart-icon' onClick={toggleCart}>
             Cart
           </div>
