@@ -3,8 +3,9 @@ import React, { useContext, useState } from "react";
 import "./styles/header.css";
 import Link from "next/link";
 import { CartState } from "../context/Context";
-import { FaShoppingCart } from "react-icons/fa";
+import { BiCaretDown } from "react-icons/bi";
 import { AiFillDelete } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
   const [isCartOpen, setCartOpen] = useState(false);
@@ -55,10 +56,17 @@ const Header = () => {
         </div>
         <div className='cart'>
           <div className='cart-icon' onClick={toggleCart}>
-            Cart
+            <span>Cart</span> <BiCaretDown />
           </div>
           {isCartOpen && (
             <div className='cart-dropdown'>
+              <div className='closeCart' onClick={toggleCart}>
+                <div>
+                  Close
+                  <AiOutlineClose />
+                </div>
+              </div>
+
               {cart.length > 0 ? (
                 <>
                   {cart.map((prod) => (
@@ -69,8 +77,8 @@ const Header = () => {
                         alt={prod.name}
                       />
                       <div className='cartItemDetail'>
-                        <span>{prod.name}</span>
-                        <span>$ {prod.price}</span>
+                        <p>{prod.name}</p>
+                        <p>${prod.price}</p>
                       </div>
                       <AiFillDelete
                         fontSize='20px'

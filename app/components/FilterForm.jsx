@@ -60,16 +60,19 @@ const FilterForm = () => {
           Include out of stock
         </label>
       </div>
-      <Rating
-        rating={byRating}
-        onClick={(i) =>
-          productDispatch({
-            type: "FILTER_BY_RATING",
-            payload: i + 1,
-          })
-        }
-        style={{ cursor: "pointer", display: "inline-block" }}
-      />
+      <div>
+        <Rating
+          rating={byRating}
+          onClick={(i) =>
+            productDispatch({
+              type: "FILTER_BY_RATING",
+              payload: i + 1,
+            })
+          }
+          style={{ cursor: "pointer", display: "inline-block" }}
+        />
+      </div>
+
       <button
         onClick={() =>
           productDispatch({

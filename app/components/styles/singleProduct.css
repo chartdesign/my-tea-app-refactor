@@ -1,8 +1,6 @@
 .card-container {
-  width: 18rem;
-  min-height: 450px;
-  /* border-radius: 1rem;
-  box-shadow: 0px 10px 8px #999; */
+  width: 16rem;
+  min-height: 425px;
   border: 1px solid lightgrey;
   display: flex;
   flex-direction: column;

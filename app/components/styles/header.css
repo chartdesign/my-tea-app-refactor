@@ -73,7 +73,7 @@ header {
   border-radius: 0.3rem;
 }
 
-.shopping-cart {
+.cart {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -87,7 +87,7 @@ header {
   padding: 2rem;
   min-width: 375px;
   border-radius: 1rem;
-  background-color: rgba(239, 238, 238, 0.9);
+  background-color: rgba(239, 238, 238, 0.95);
 }
 
 .cart-dropdown button {
@@ -104,4 +104,24 @@ header {
   width: 100px;
   height: 100px;
   object-fit: cover;
+}
+
+.cartitem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 1rem;
+}
+
+.cart-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.closeCart {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
 }

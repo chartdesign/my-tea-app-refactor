@@ -1,20 +1,26 @@
 .FilterForm {
-  min-width: 480px;
-  width: 30%;
-  min-height: 680px;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black color */
-  padding: 20px; /* Add some padding to space the content from the edges */
+  border-radius: 1rem;
+  /* width: 30%; */
+  border: 1px solid lightgray;
+  padding: 20px;
 }
 
 /* Style for radio buttons and checkbox labels */
 .FilterForm label {
   display: block;
   margin: 10px 0; /* Add some vertical spacing between the form elements */
-  color: white; /* Text color for labels */
+  color: rgb(59, 58, 58); /* Text color for labels */
 }
 
 /* Style for radio buttons and checkboxes */
 .FilterForm input[type="radio"],
 .FilterForm input[type="checkbox"] {
   margin-right: 5px; /* Add some spacing between the input and label text */
+}
+
+.FilterForm button {
+  padding: 0.5rem;
+  width: 90%;
+  margin: 0 auto;
+  border: none;
 }
